@@ -35,8 +35,43 @@ class ViewController: UIViewController {
             datePicker.datePickerMode = .date
         }
         
+        if #available(iOS 15.0, *) {
+            dateFormatStyle()
+            numberFormatStyle()
+        }
+    }
+    
+    @available(iOS 15.0, *)
+    func dateFormatStyle() {
+        let value = Date()
+        
+        print(value)
+        print(value.formatted())
+        print(value.formatted(date: .omitted, time: .shortened))
+        print(value.formatted(date: .complete, time: .shortened))
+        print(value.formatted(date: .abbreviated, time: .shortened))
+        
+        let locale = Locale(identifier: "ko-KR")
+        
+        let result =
+        value.formatted(.dateTime.locale(locale).day().month(.twoDigits).year())
+        print("result", result)
+        
+        let result2 = value.formatted(.dateTime.day().month(.twoDigits).year( ))
+        print("result2", result2)
     }
 
+    @available(iOS 15.0, *)
+    func numberFormatStyle() {
+        print(50.formatted(.percent))
+        
+        print(1234567890.formatted())
+        
+        print(1234567890.formatted(.currency(code: "krw")))
+        
+        let result = ["고래밥", "칙촉", "지우개"].formatted()
+        print(result)
+    }
 
 }
 

@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        datePickerValueChanged(datePicker)
+        
         if #available(iOS 14.0, *) {
             datePicker.preferredDatePickerStyle = .inline
         } else {
@@ -39,6 +41,34 @@ class ViewController: UIViewController {
             dateFormatStyle()
             numberFormatStyle()
         }
+    }
+    
+    func days(from date: Date) -> Int {
+        return Calendar.current.dateComponents([.day], from: date, to: Date()).day! + 1
+    }
+    
+    @IBAction func datePickerValueChanged(_ sender: Any) {
+        
+        let format = DateFormatter()
+        format.dateFormat = "yyyy년 M월 d일"
+        
+        let startDate = datePicker.date
+        var daysCount: Int = days(from: startDate)
+        let hundred = Calendar.current.date(byAdding: .day, value: 100, to: startDate)
+        
+        print("hundred", hundred)
+        
+        
+        let result = format.string(from: datePicker.date)
+        print("result", result)
+        
+        day1Day.text = result
+        day2Day.text = result
+        day3Day.text = result
+        day4Day.text = result
+        
+        
+        
     }
     
     @available(iOS 15.0, *)
@@ -61,6 +91,7 @@ class ViewController: UIViewController {
         print("result2", result2)
     }
 
+    
     @available(iOS 15.0, *)
     func numberFormatStyle() {
         print(50.formatted(.percent))

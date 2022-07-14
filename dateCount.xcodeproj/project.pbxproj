@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE84FD54287FA67D00B8B7CF /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE84FD53287FA67C00B8B7CF /* Setting.storyboard */; };
+		DE918C3E287FAFE90057B483 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = DE918C3D287FAFE90057B483 /* TextFieldEffects */; };
+		DE918C41287FAFF70057B483 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = DE918C40287FAFF70057B483 /* SideMenu */; };
+		DE918C44287FB00A0057B483 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DE918C43287FB00A0057B483 /* FSCalendar */; };
+		DE918C4A287FB0A70057B483 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE918C49287FB0A70057B483 /* Search.storyboard */; };
+		DE918C4D287FBE430057B483 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE918C4C287FBE430057B483 /* IQKeyboardManagerSwift */; };
+		DE918C4F287FC2B90057B483 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE918C4E287FC2B90057B483 /* PracticeViewController.swift */; };
 		DEE61ABF287E94D200806290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE61ABE287E94D200806290 /* AppDelegate.swift */; };
 		DEE61AC1287E94D200806290 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE61AC0287E94D200806290 /* SceneDelegate.swift */; };
 		DEE61AC3287E94D200806290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE61AC2287E94D200806290 /* ViewController.swift */; };
@@ -16,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE84FD53287FA67C00B8B7CF /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		DE918C49287FB0A70057B483 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		DE918C4E287FC2B90057B483 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		DEE61ABB287E94D200806290 /* dateCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dateCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE61ABE287E94D200806290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE61AC0287E94D200806290 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE918C41287FAFF70057B483 /* SideMenu in Frameworks */,
+				DE918C4D287FBE430057B483 /* IQKeyboardManagerSwift in Frameworks */,
+				DE918C44287FB00A0057B483 /* FSCalendar in Frameworks */,
+				DE918C3E287FAFE90057B483 /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +73,10 @@
 				DEE61ABE287E94D200806290 /* AppDelegate.swift */,
 				DEE61AC0287E94D200806290 /* SceneDelegate.swift */,
 				DEE61AC2287E94D200806290 /* ViewController.swift */,
+				DE918C4E287FC2B90057B483 /* PracticeViewController.swift */,
 				DEE61AC4287E94D200806290 /* Main.storyboard */,
+				DE84FD53287FA67C00B8B7CF /* Setting.storyboard */,
+				DE918C49287FB0A70057B483 /* Search.storyboard */,
 				DEE61AC7287E94D400806290 /* Assets.xcassets */,
 				DEE61AC9287E94D400806290 /* LaunchScreen.storyboard */,
 				DEE61ACC287E94D400806290 /* Info.plist */,
@@ -83,6 +100,12 @@
 			dependencies = (
 			);
 			name = dateCount;
+			packageProductDependencies = (
+				DE918C3D287FAFE90057B483 /* TextFieldEffects */,
+				DE918C40287FAFF70057B483 /* SideMenu */,
+				DE918C43287FB00A0057B483 /* FSCalendar */,
+				DE918C4C287FBE430057B483 /* IQKeyboardManagerSwift */,
+			);
 			productName = dateCount;
 			productReference = DEE61ABB287E94D200806290 /* dateCount.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,12 @@
 				Base,
 			);
 			mainGroup = DEE61AB2287E94D200806290;
+			packageReferences = (
+				DE918C3C287FAFE90057B483 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				DE918C3F287FAFF70057B483 /* XCRemoteSwiftPackageReference "SideMenu" */,
+				DE918C42287FB00A0057B483 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				DE918C4B287FBE430057B483 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = DEE61ABC287E94D200806290 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +157,8 @@
 				DEE61ACB287E94D400806290 /* LaunchScreen.storyboard in Resources */,
 				DEE61AC8287E94D400806290 /* Assets.xcassets in Resources */,
 				DEE61AC6287E94D200806290 /* Main.storyboard in Resources */,
+				DE84FD54287FA67D00B8B7CF /* Setting.storyboard in Resources */,
+				DE918C4A287FB0A70057B483 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEE61AC3287E94D200806290 /* ViewController.swift in Sources */,
+				DE918C4F287FC2B90057B483 /* PracticeViewController.swift in Sources */,
 				DEE61ABF287E94D200806290 /* AppDelegate.swift in Sources */,
 				DEE61AC1287E94D200806290 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +390,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE918C3C287FAFE90057B483 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DE918C3F287FAFF70057B483 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		DE918C42287FB00A0057B483 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		DE918C4B287FBE430057B483 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE918C3D287FAFE90057B483 /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE918C3C287FAFE90057B483 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		DE918C40287FAFF70057B483 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE918C3F287FAFF70057B483 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		DE918C43287FB00A0057B483 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE918C42287FB00A0057B483 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		DE918C4C287FBE430057B483 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE918C4B287FBE430057B483 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEE61AB3287E94D200806290 /* Project object */;
 }

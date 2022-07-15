@@ -193,15 +193,19 @@
                         <outlet property="day1D" destination="Raf-2X-gkU" id="4cn-Nl-dPJ"/>
                         <outlet property="day1Day" destination="sIP-CI-Baq" id="ZO3-EZ-woY"/>
                         <outlet property="day1Img" destination="WGQ-hg-PRK" id="QEY-hS-fjw"/>
+                        <outlet property="day1View" destination="sWf-Dl-4i5" id="sgI-uA-MRR"/>
                         <outlet property="day2D" destination="LA9-xG-fFV" id="rtj-dm-Rfw"/>
                         <outlet property="day2Day" destination="Ye8-MH-lGm" id="ZpB-Sc-ako"/>
                         <outlet property="day2Img" destination="i0g-jQ-wPE" id="Cyn-GV-w5Y"/>
+                        <outlet property="day2View" destination="SKd-Wh-7u2" id="Pws-Ec-1HV"/>
                         <outlet property="day3D" destination="dBi-9w-mJz" id="upB-kK-u9j"/>
                         <outlet property="day3Day" destination="jcC-JI-ta0" id="Q5D-d9-sLn"/>
                         <outlet property="day3Img" destination="WjR-Iw-yjY" id="czM-ot-cUc"/>
+                        <outlet property="day3View" destination="dM4-cZ-PWJ" id="Vm8-al-c6q"/>
                         <outlet property="day4D" destination="Ing-cH-XN0" id="OQQ-Bv-Sf8"/>
                         <outlet property="day4Day" destination="I7p-cB-dDr" id="bXY-F5-tKd"/>
                         <outlet property="day4Img" destination="cu7-PQ-eI7" id="N1j-jG-LY3"/>
+                        <outlet property="day4View" destination="gSX-Ua-Cga" id="ii9-Bn-CR8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

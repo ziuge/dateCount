@@ -11,6 +11,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    @IBOutlet weak var day1View: UIView!
+    @IBOutlet weak var day2View: UIView!
+    @IBOutlet weak var day3View: UIView!
+    @IBOutlet weak var day4View: UIView!
+    
     @IBOutlet weak var day1Img: UIImageView!
     @IBOutlet weak var day2Img: UIImageView!
     @IBOutlet weak var day3Img: UIImageView!
@@ -41,6 +46,23 @@ class ViewController: UIViewController {
             dateFormatStyle()
             numberFormatStyle()
         }
+        
+        shadow(view: day1View, img: day1Img)
+        shadow(view: day2View, img: day2Img)
+        shadow(view: day3View, img: day3Img)
+        shadow(view: day4View, img: day4Img)
+
+    }
+    
+    func shadow(view: UIView, img: UIImageView) {
+        view.layer.cornerRadius = 15
+        img.layer.cornerRadius = 15
+        
+        view.layer.shadowColor = UIColor.darkGray.cgColor
+        view.layer.shadowRadius = 6
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = CGSize(width: 1, height: 1)
+        view.layer.shadowPath = nil
     }
     
     func days(from date: Date) -> Int {
@@ -53,21 +75,20 @@ class ViewController: UIViewController {
         format.dateFormat = "yyyy년 M월 d일"
         
         let startDate = datePicker.date
-        var daysCount: Int = days(from: startDate)
-        let hundred = Calendar.current.date(byAdding: .day, value: 100, to: startDate)
+//        var daysCount: Int = days(from: startDate)
         
-        print("hundred", hundred)
-        
+        func countDays(value: Int) -> String{
+            let hundred = Calendar.current.date(byAdding: .day, value: value, to: startDate)!
+            return format.string(from: hundred)
+        }
         
         let result = format.string(from: datePicker.date)
         print("result", result)
         
-        day1Day.text = result
-        day2Day.text = result
-        day3Day.text = result
-        day4Day.text = result
-        
-        
+        day1Day.text = countDays(value: 100)
+        day2Day.text = countDays(value: 200)
+        day3Day.text = countDays(value: 300)
+        day4Day.text = countDays(value: 400)
         
     }
     
